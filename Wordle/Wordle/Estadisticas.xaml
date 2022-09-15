@@ -1,0 +1,60 @@
+﻿<Window x:Class="Wordle.Estadisticas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wordle"
+        mc:Ignorable="d"
+        Title="Estadísticas" Height="350" Width="250" Icon="Statistic.ico" Cursor="Hand">
+    <Window.Background>
+        <ImageBrush ImageSource="SUPER MARIO BROS IPHONE WALLPAPER.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="69*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label Content="Partidas jugadas: " FontWeight="Bold"/>
+            <Label  Name= "lbPartidas"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label Content="Porcentaje de victorias: " FontWeight="Bold"/>
+            <Label Name= "lbPorcentaje"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label Content="Racha actual de victorias: " FontWeight="Bold"/>
+            <Label  Name= "lbRachaActual"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label Content="Racha más larga: " FontWeight="Bold"/>
+            <Label  Name= "lbRachaMasLarga"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label Content="Victorias: " FontWeight="Bold"/>
+            <Label  Name= "lbVictorias"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label  Name= "lbVidas"  FontWeight="Bold"/>
+            <Image Source="/img/Life.png" Width="30" Height="30"/>
+        </StackPanel>
+        <StackPanel Grid.Row="6" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label  Name= "lbPuntos" FontWeight="Bold"/>
+            <Image Source="/img/Coin.png" Width="30" Height="30"/>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label  Content="{Binding Pistas}" Name="lbPistas" FontWeight="Bold"/>
+            <Image Source="/img/Clue.png" Width="30" Height="30"/>
+        </StackPanel>
+    </Grid>
+</Window>

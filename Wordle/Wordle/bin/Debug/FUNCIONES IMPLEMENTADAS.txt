@@ -1,0 +1,13 @@
+1- Posibilidad de elegir entre palabras de 5 a 10 letras.
+2- Comprar pistas.
+3- Comprar vidas.
+4- Se gana más oro en función inversa del número de intentos.
+5- Validación de que la palabra exista dentro del diccionario.
+6- Al apretar el botón de jugar, se redirige el foco al primer textbox.
+7- Al escribir pasa automáticamente al siguiente textbox.
+8- Limitación de escritura en el textbox a 1 carácter.
+9- Al borrar, pasa al textbox anterior.
+10- Implementación de tienda.
+11- Logo de apliación.
+12- Posibilidad de corregir una compra mediante un messagebox con opción de si el
+usuario está seguro de la compra.

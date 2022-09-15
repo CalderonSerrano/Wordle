@@ -1,0 +1,149 @@
+﻿<Window x:Class="Wordle.Tienda"
+        Icon="/img/Shop.ico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wordle"
+        mc:Ignorable="d"
+        Background="#FF22F5D8"
+        Title="Tienda" Height="220" Width="500">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="Cyan" Offset="0"/>
+                <GradientStop Color="#FF4E8693" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Label Content="Vidas" FontWeight="Bold"/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Content="Pistas" FontWeight="Bold"/>
+        </StackPanel>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content=" x1"/>
+                <Image Source="/img/Life.png" Width="30" Height="30"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content=" x5"/>
+                <Image Source="/img/Life.png" Width="30" Height="30"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="x10"/>
+                <Image Source="/img/Life.png" Width="30" Height="30"/>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="x20"/>
+                <Image Source="/img/Life.png" Width="30" Height="30"/>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="x50"/>
+                <Image Source="/img/Life.png" Width="30" Height="30"/>
+            </StackPanel>
+            <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="Vidas1" Width="100" Height="20" Background="White" Cursor="Hand">
+                    <Image Source="/img/Coin.png" Width="auto" Height="auto"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="Vidas5" Width="100" Height="20" Background="White" Cursor="Hand">
+                    <Image Source="/img/Coin.png" Width="17" Height="17"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="Vidas10" Width="100" Height="20" Background="White" Cursor="Hand">
+                    <Image Source="/img/Coin.png" Width="17" Height="17"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="Vidas20" Width="100" Height="20" Background="White" Cursor="Hand">
+                    <Image Source="/img/Coin.png" Width="17" Height="17"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="Vidas50" Width="100" Height="20" Background="White" Cursor="Hand">
+                    <Image Source="/img/Coin.png" Width="17" Height="17"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="  x1"/>
+                <Image Source="/img/Clue.png" Width="30" Height="30"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="  x5"/>
+                <Image Source="/img/Clue.png" Width="30" Height="30"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="x10"/>
+                <Image Source="/img/Clue.png" Width="30" Height="30"/>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="x20"/>
+                <Image Source="/img/Clue.png" Width="30" Height="30"/>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="x50"/>
+                <Image Source="/img/Clue.png" Width="30" Height="30"/>
+            </StackPanel>
+            <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="Pistas1" Width="100" Height="20" Background="White" Cursor="Hand">
+                    <Image Source="/img/Coin.png" Width="auto" Height="auto"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="Pistas5" Width="100" Height="20" Background="White" Cursor="Hand">
+                    <Image Source="/img/Coin.png" Width="17" Height="17"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="Pistas10" Width="100" Height="20" Background="White" Cursor="Hand">
+                    <Image Source="/img/Coin.png" Width="17" Height="17"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="Pistas20" Width="100" Height="20" Background="White" Cursor="Hand">
+                    <Image Source="/img/Coin.png" Width="17" Height="17"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="Pistas50" Width="100" Height="20" Background="White" Cursor="Hand">
+                    <Image Source="/img/Coin.png" Width="17" Height="17"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
